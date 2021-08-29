@@ -1,0 +1,23 @@
+
+* 追加パッケージ
+
+** Manjaro
+1. libgccjit
+   1. [[https://aur.archlinux.org/packages/libgccjit][AUR (en) - libgccjit]]
+   1. ~yay libgccjit~
+
+
+* ソースコードを取得
+
+#+begin_src shell
+  git clone https://github.com/emacs-mirror/emacs.git
+#+end_src
+
+* コンパイル
+
+#+begin_src shell
+  cd emacs
+  ./configure --with-native-compilation --with-json --prefix=/usr/local --with-imagemagick
+  make
+#+end_src
+
