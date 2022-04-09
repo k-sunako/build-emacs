@@ -17,7 +17,7 @@
 
 #+begin_src shell
   cd emacs
-  ./configure --with-native-compilation --with-json --prefix=/usr/local --with-imagemagick
-  make
+  ./configure --prefix=/usr/local --with-native-compilation --with-json --with-imagemagick --with-pgtk
+  make -j4
+  make install
 #+end_src
-
